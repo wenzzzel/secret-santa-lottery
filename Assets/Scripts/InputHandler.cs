@@ -1,18 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Networking;
+
+[System.Serializable]
+public class WebResponse 
+{
+    public List<Participant> participants;
+}
+
+[System.Serializable]
+public class Participant 
+{
+    public int id;
+    public string name;
+}
 
 public class InputHandler : MonoBehaviour
 {
     private Camera _mainCamera;
-    private List<string> _names;
     private bool _hatClicked = false;
     private Vector2 _targetPosition;
-    private Vector2 _currentPosition;
+    private WebResponse _webResponse;
+    private bool _requestDone = false;
+    private bool _noteDelivered = false;
 
     public GameObject santasHat;
     public TextMeshPro noteText;
@@ -21,27 +34,28 @@ public class InputHandler : MonoBehaviour
     private void Awake()
     {
         _mainCamera = Camera.main;
-
-        _names = new List<string>()
-        {
-            "Erik",
-            "Erika",
-        };
     }
 
     // Start is called before the first frame update
     void Start()
     {
         _targetPosition = new Vector2(note.transform.position.x, 0f);
-        // _currentPosition = note.transform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (_hatClicked)
+        if (_requestDone)
         {
             note.transform.position = Vector2.Lerp(note.transform.position, _targetPosition, 3f * Time.deltaTime);
+
+            if(_noteDelivered) return;
+
+            _noteDelivered = true;
+
+            var randomIndex = Random.Range(0, _webResponse.participants.Count);
+            noteText.text = _webResponse.participants[randomIndex].name; 
+
         }
     }
 
@@ -51,7 +65,7 @@ public class InputHandler : MonoBehaviour
 
         RaycastHit2D rayHit;
 
-        if (Touchscreen.current is not null) //Use touch
+        if (Touchscreen.current is not null) //Use touchscreen
         {
             rayHit = Physics2D.GetRayIntersection(_mainCamera.ScreenPointToRay(Touchscreen.current.position.ReadValue()));
         }
@@ -66,8 +80,19 @@ public class InputHandler : MonoBehaviour
 
         _hatClicked = true;
 
-        var randomIndex = Random.Range(0, _names.Count);
-        noteText.text = _names[randomIndex]; 
+        StartCoroutine(GetParticipants());
+    }
 
+    private IEnumerator GetParticipants()
+    {
+        using (UnityWebRequest request = UnityWebRequest.Get("http://secretsantalotteryapi.hzbcd0gmg8bbfhfb.northeurope.azurecontainer.io/Participant"))
+        // using (UnityWebRequest request = UnityWebRequest.Get("http://localhost:5238/Participant"))
+        {
+            yield return request.SendWebRequest();
+
+            _webResponse = JsonUtility.FromJson<WebResponse>(request.downloadHandler.text);
+
+            if (request.isDone) _requestDone = true;
+        }
     }
 }
