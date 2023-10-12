@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Networking;
+// using System.IO;
 
 [System.Serializable]
 public class WebResponse 
@@ -24,6 +25,8 @@ public class InputHandler : MonoBehaviour
     private bool _hatClicked = false;
     private Vector2 _targetPosition;
     private WebResponse _webResponse;
+    private string _participantId;
+    private string _participantName;
     private bool _requestDone = false;
     private bool _noteDelivered = false;
 
@@ -40,6 +43,7 @@ public class InputHandler : MonoBehaviour
     void Start()
     {
         _targetPosition = new Vector2(note.transform.position.x, 0f);
+        Debug.Log("test");
     }
 
     // Update is called once per frame
@@ -54,8 +58,10 @@ public class InputHandler : MonoBehaviour
             _noteDelivered = true;
 
             var randomIndex = Random.Range(0, _webResponse.participants.Count);
-            noteText.text = _webResponse.participants[randomIndex].name; 
+            _participantId = _webResponse.participants[randomIndex].id.ToString();
+            _participantName = _webResponse.participants[randomIndex].name;
 
+            noteText.text = _participantName; 
         }
     }
 
@@ -81,18 +87,29 @@ public class InputHandler : MonoBehaviour
         _hatClicked = true;
 
         StartCoroutine(GetParticipants());
+
+        StartCoroutine(DeleteParticipantWithDelay());
     }
 
     private IEnumerator GetParticipants()
     {
-        using (UnityWebRequest request = UnityWebRequest.Get("http://secretsantalotteryapi.hzbcd0gmg8bbfhfb.northeurope.azurecontainer.io/Participant"))
-        // using (UnityWebRequest request = UnityWebRequest.Get("http://localhost:5238/Participant"))
-        {
-            yield return request.SendWebRequest();
+        using UnityWebRequest request = UnityWebRequest.Get("https://wenzelapiman.azure-api.net/participant");
+        
+        yield return request.SendWebRequest();
 
-            _webResponse = JsonUtility.FromJson<WebResponse>(request.downloadHandler.text);
+        _webResponse = JsonUtility.FromJson<WebResponse>(request.downloadHandler.text);
 
-            if (request.isDone) _requestDone = true;
-        }
+        if (request.isDone) _requestDone = true;
+    }
+
+    private IEnumerator DeleteParticipantWithDelay()
+    {
+        yield return new WaitForSeconds(3f);
+        
+        using UnityWebRequest request = UnityWebRequest.Delete($"https://wenzelapiman.azure-api.net/participant?id={_participantId}&name={_participantName}");
+        
+        Debug.Log($"Participant to delete has id: {_participantId} and name: {_participantName}.");
+        
+        yield return request.SendWebRequest();
     }
 }
