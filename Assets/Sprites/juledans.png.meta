@@ -1,0 +1,2296 @@
+fileFormatVersion: 2
+guid: 064e87ad6c6a0c04f9288412d268e7e9
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: juledans_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 13871
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32fbd0da0d0b13f41bf24d8e77f1221c
+      internalID: -2086194779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_1
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 13871
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a810af4a03ff6cb43a6b61159e6d7b79
+      internalID: -214444932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_2
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 13871
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 436d847601c9b2a43b4dd3aadc2d1f59
+      internalID: -1053029914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_3
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 13871
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b84a59ed24b0d584e95dae2bf09af164
+      internalID: 475367812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_4
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 13871
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd2edc59f2bf49a46b82c3846fc1b6a0
+      internalID: -845543816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_5
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 13871
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93794bf19113f6340af847f64ad869b8
+      internalID: -406068392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_6
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 13871
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60f42cfec3add944fb140b0ee7970d11
+      internalID: -1780858609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 12804
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b893f74ca078df49bc0580ed0b68468
+      internalID: -732403300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_8
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 12804
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfc71d75ea80c6b4fa972d48e0f4b710
+      internalID: 484070340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_9
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 12804
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7772f06802bbf1419c559d0ef448967
+      internalID: -1435659294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_10
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 12804
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7ff178c0ed39624abd4bb0d61380a17
+      internalID: 1231709439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_11
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 12804
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d67b6a6205c8b241952e3188fc4967b
+      internalID: 785095190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_12
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 12804
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56eb0803b313bf14f841e7b91af6c0da
+      internalID: -56147304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_13
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 12804
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26226fd90f5b899478ccbe2da0728648
+      internalID: -494727733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 11737
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1cad8bb80d0e1c45be60764e9fb15da
+      internalID: 339988275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_15
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 11737
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5386eabd3d3f354288c3375a76164a9
+      internalID: 1685444002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_16
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 11737
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fa6d56e18669bd40a6ae614207d5645
+      internalID: 1872985531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_17
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 11737
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b115aa160e6b585488d885ac8c433f0f
+      internalID: -1877380169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_18
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 11737
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b0d3bf5ed6f66e4586b4eca6dd719b4
+      internalID: -660683807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_19
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 11737
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b202be878fdc2544a8086192fa4b8545
+      internalID: 32661442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_20
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 11737
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8e6207939a5cb14f9b7dc73137f0949
+      internalID: 54484536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 10670
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37b31c2fa900ecb4d899769cc98b7357
+      internalID: -2062034296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_22
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 10670
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bacfafa2e62e8e429a85b4b3a7e1ad6
+      internalID: -146136018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_23
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 10670
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 053143483b5c8704283d3b88fa146a94
+      internalID: -66911826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_24
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 10670
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce2df4db3b276e34c901ba2eafe7b101
+      internalID: 163594729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_25
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 10670
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5055f9fa7aa4a7547a764b69fdd30fc9
+      internalID: -1427387734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_26
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 10670
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7325052e3801f1340acc459db9214044
+      internalID: 2147021171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_27
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 10670
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 927c1759206d60c458a7a002f70bccbe
+      internalID: 1606904233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9603
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 876a599d2b84a8543ab60f2e641e0450
+      internalID: -373556021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_29
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 9603
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3b0de837fd008642a6f442d4007f1e7
+      internalID: -1185982595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_30
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 9603
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4608e465d2794af47b4ef90c14cd8506
+      internalID: 1966426603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_31
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 9603
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de80ff72048add246b0b56f4770b4e70
+      internalID: 958686928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_32
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 9603
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b80a39cb3023483469a9fe4a820a7e69
+      internalID: 71775786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_33
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 9603
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d09bdc0c640561342af8c1a34828ccc9
+      internalID: -1566557047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_34
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 9603
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 053e8fc3f87b32a408808aeee8f31d7b
+      internalID: 1049344249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8536
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a85e282e1a870d14992e4bd8164d93f6
+      internalID: 1329471143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_36
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 8536
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29482e462abca0c4f945f626052bd394
+      internalID: -967825253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_37
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 8536
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0d47ffe37bf1844fa1916787368e2d9
+      internalID: -1293510684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_38
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 8536
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8b878c48d43b6343a40e1075fe20831
+      internalID: 832534302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_39
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 8536
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0da80481d50b0fa44ae0d664c62c711f
+      internalID: 179902469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_40
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 8536
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74bca4ad0d88953438417760f42a8608
+      internalID: -1196078445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_41
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 8536
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3692b1953cf4aa4d84c5424fba4475a
+      internalID: -154650505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7469
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8936b20f375cef647b9bc4a2f57ffbc4
+      internalID: -154685113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_43
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 7469
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cf75ef65ef613c43ac5055b15b8a545
+      internalID: -108595248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_44
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 7469
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08341c03b5450404d9b54db49f168471
+      internalID: -199349277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_45
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 7469
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f0f8ebf073cef24fa8bae769469d9bf
+      internalID: -1624170227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_46
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 7469
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df6a51a3d30b7bf40a46ed0498786bc4
+      internalID: 129828781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_47
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 7469
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08a3b38af0c6afc408cc3fb29eef8650
+      internalID: 307793422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_48
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 7469
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc3afe5848e54164e9cc7a8f727d03eb
+      internalID: -2122190938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6402
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df23450056a07b349b962a41ddefe7a7
+      internalID: -1529341332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_50
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 6402
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e19f080cafb27114694d90f94f993daa
+      internalID: 834566118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_51
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 6402
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e8d16865a06f8f4782fdd18b89ae4ac
+      internalID: 1933908925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_52
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 6402
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba444954e2e94684bafc7ffe151bb261
+      internalID: 1416520895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_53
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 6402
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7378e29a178138449c0cb6390d7e05b
+      internalID: -895144987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_54
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 6402
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2186cbc32b786d24da0c5cbee3dc68b0
+      internalID: -1863533713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_55
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 6402
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ede778a6d032d074597d0e674878cb78
+      internalID: -1740061802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5335
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ed5a78367fc1b543b29dfde72a3c8ec
+      internalID: 84196036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_57
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 5335
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d06adfe78e8118b4b82753c70885140b
+      internalID: 1453108878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_58
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 5335
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb9396e5721119a4e97491e95e04facb
+      internalID: -830874606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_59
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 5335
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86fa8aa5e2e3a554797b8b8610f4b343
+      internalID: 946001636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_60
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 5335
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0d7b34b312d77a4eb0dadc3117025bb
+      internalID: 1218753686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_61
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 5335
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56dc14d245f26924285fafc1d9245d0f
+      internalID: 1481980106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_62
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 5335
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d5f3be91a750154f950926fb7e7b9af
+      internalID: -1487660094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4268
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ba119a7ac0840d46a1fd76bd081272d
+      internalID: 357636514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_64
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 4268
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1952c2fd8389efc4a9c874f151431268
+      internalID: 1176699370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_65
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 4268
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 103f804be7668b340ac246f3535fc6f0
+      internalID: -1557219394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_66
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 4268
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cc44187c0b5b8942a2c184f315db767
+      internalID: -625666532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_67
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 4268
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 366a31722a000b74089d48a002ad352f
+      internalID: 132161485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_68
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 4268
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c09aba9c8539f104ca691462c51d983e
+      internalID: 1433983012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_69
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 4268
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2086669cd38a9d9459c965e599bf5a2e
+      internalID: 214351759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3201
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f49380dc2e546448b68cec1a9f197fc
+      internalID: 674314736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_71
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3201
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88a610b4b80e536449b44092662a864d
+      internalID: -475358959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_72
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3201
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25f8aed30a10db04da232afb4be77674
+      internalID: -1836929833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_73
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3201
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce733bdccce13bb4db57b02fa50b3e82
+      internalID: -1837590861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_74
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3201
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a843e0bebe781254ea9e350bfd52ebe4
+      internalID: 1520832992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_75
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3201
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51a958e32af57d949ab7415abeff508c
+      internalID: 1381290573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_76
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 3201
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cee15c14567cb324ab70339654feec38
+      internalID: 1240450614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_77
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2134
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2d2941ab2b40e64584e6aacd4acba0e
+      internalID: 933894653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_78
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2134
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 190c71d309bf7fe4fb4d0e8688cb1771
+      internalID: 1251670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_79
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2134
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d440c8a0e5254d547bb21a73a2344d58
+      internalID: 33054950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_80
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2134
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed71bc8be7518a340ae2356bb72572bf
+      internalID: 371334755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_81
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2134
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31bb0dd6c20cc26478ca153079f53609
+      internalID: 1589650223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_82
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2134
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c168fa2a1810cff42b6822e0b813d82f
+      internalID: 1733777908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_83
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 2134
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a0895af7c4df5f4eb8f436613693c46
+      internalID: -2085654499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1067
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6638fc26da62d064b9df94beadb75b25
+      internalID: -1321894570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_85
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1067
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e406a88ec029bac4aa827fb729fb046b
+      internalID: -592703062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_86
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1067
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3362c36a8c0855d46b00b10a80f4319f
+      internalID: -1714214487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_87
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1067
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90661ce1d0dfd8e4198237981710deec
+      internalID: -1263306108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_88
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1067
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 165f34b21e871de4cb5a8a048036dd09
+      internalID: -397595096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_89
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1067
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bd03713398a8d44e97f8623038af476
+      internalID: 1378489246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_90
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 1067
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcf2d28e0ceff694ab9c63295cf2e759
+      internalID: 1302203174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_91
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcd1e9cac1517464da077e3d3661aa86
+      internalID: 1814019013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_92
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0e87a30ccbb3384393ff24401123c6d
+      internalID: 1131433588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_93
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 0
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5bb17576f966fb45a3777793995b507
+      internalID: 606637031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_94
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 0
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fad44234e93886841950c65b91752792
+      internalID: 413026097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_95
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 0
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41ac38fb598a95649ad8a11cd03241a3
+      internalID: 2123679977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_96
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 0
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d3b3217f2f68614693d541cb6efdcb0
+      internalID: 2049693124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: juledans_97
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 0
+        width: 600
+        height: 1067
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a57fe5bdf91a2841a8f364d5240cafa
+      internalID: 149660539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      juledans_0: -2086194779
+      juledans_1: -214444932
+      juledans_10: 1231709439
+      juledans_11: 785095190
+      juledans_12: -56147304
+      juledans_13: -494727733
+      juledans_14: 339988275
+      juledans_15: 1685444002
+      juledans_16: 1872985531
+      juledans_17: -1877380169
+      juledans_18: -660683807
+      juledans_19: 32661442
+      juledans_2: -1053029914
+      juledans_20: 54484536
+      juledans_21: -2062034296
+      juledans_22: -146136018
+      juledans_23: -66911826
+      juledans_24: 163594729
+      juledans_25: -1427387734
+      juledans_26: 2147021171
+      juledans_27: 1606904233
+      juledans_28: -373556021
+      juledans_29: -1185982595
+      juledans_3: 475367812
+      juledans_30: 1966426603
+      juledans_31: 958686928
+      juledans_32: 71775786
+      juledans_33: -1566557047
+      juledans_34: 1049344249
+      juledans_35: 1329471143
+      juledans_36: -967825253
+      juledans_37: -1293510684
+      juledans_38: 832534302
+      juledans_39: 179902469
+      juledans_4: -845543816
+      juledans_40: -1196078445
+      juledans_41: -154650505
+      juledans_42: -154685113
+      juledans_43: -108595248
+      juledans_44: -199349277
+      juledans_45: -1624170227
+      juledans_46: 129828781
+      juledans_47: 307793422
+      juledans_48: -2122190938
+      juledans_49: -1529341332
+      juledans_5: -406068392
+      juledans_50: 834566118
+      juledans_51: 1933908925
+      juledans_52: 1416520895
+      juledans_53: -895144987
+      juledans_54: -1863533713
+      juledans_55: -1740061802
+      juledans_56: 84196036
+      juledans_57: 1453108878
+      juledans_58: -830874606
+      juledans_59: 946001636
+      juledans_6: -1780858609
+      juledans_60: 1218753686
+      juledans_61: 1481980106
+      juledans_62: -1487660094
+      juledans_63: 357636514
+      juledans_64: 1176699370
+      juledans_65: -1557219394
+      juledans_66: -625666532
+      juledans_67: 132161485
+      juledans_68: 1433983012
+      juledans_69: 214351759
+      juledans_7: -732403300
+      juledans_70: 674314736
+      juledans_71: -475358959
+      juledans_72: -1836929833
+      juledans_73: -1837590861
+      juledans_74: 1520832992
+      juledans_75: 1381290573
+      juledans_76: 1240450614
+      juledans_77: 933894653
+      juledans_78: 1251670
+      juledans_79: 33054950
+      juledans_8: 484070340
+      juledans_80: 371334755
+      juledans_81: 1589650223
+      juledans_82: 1733777908
+      juledans_83: -2085654499
+      juledans_84: -1321894570
+      juledans_85: -592703062
+      juledans_86: -1714214487
+      juledans_87: -1263306108
+      juledans_88: -397595096
+      juledans_89: 1378489246
+      juledans_9: -1435659294
+      juledans_90: 1302203174
+      juledans_91: 1814019013
+      juledans_92: 1131433588
+      juledans_93: 606637031
+      juledans_94: 413026097
+      juledans_95: 2123679977
+      juledans_96: 2049693124
+      juledans_97: 149660539
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
