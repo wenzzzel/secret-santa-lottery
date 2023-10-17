@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Networking;
+using UnityEngine.UI;
 // using System.IO;
 
 [System.Serializable]
@@ -25,7 +26,7 @@ public class InputHandler : MonoBehaviour
     private bool _hatClicked = false;
     private Vector2 _targetPosition;
     private WebResponse _webResponse;
-    private string _participantId;
+    private int _participantId;
     private string _participantName;
     private bool _requestDone = false;
     private bool _noteDelivered = false;
@@ -33,6 +34,7 @@ public class InputHandler : MonoBehaviour
     public GameObject santasHat;
     public TextMeshPro noteText;
     public GameObject note;
+    public TMP_Dropdown whoAreYou;
 
     private void Awake()
     {
@@ -43,7 +45,6 @@ public class InputHandler : MonoBehaviour
     void Start()
     {
         _targetPosition = new Vector2(note.transform.position.x, -0.5f);
-        Debug.Log("test");
     }
 
     // Update is called once per frame
@@ -57,9 +58,14 @@ public class InputHandler : MonoBehaviour
 
             _noteDelivered = true;
 
-            var randomIndex = Random.Range(0, _webResponse.participants.Count);
-            _participantId = _webResponse.participants[randomIndex].id.ToString();
-            _participantName = _webResponse.participants[randomIndex].name;
+            do
+            {
+                var randomIndex = Random.Range(0, _webResponse.participants.Count);
+                _participantId = _webResponse.participants[randomIndex].id;
+                _participantName = _webResponse.participants[randomIndex].name;
+
+                Debug.Log($"Get {_participantName}");
+            } while (_participantId == whoAreYou.value);
 
             noteText.text = _participantName; 
         }
