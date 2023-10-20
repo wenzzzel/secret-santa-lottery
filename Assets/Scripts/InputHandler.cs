@@ -94,7 +94,7 @@ public class InputHandler : MonoBehaviour
 
         StartCoroutine(GetParticipants());
 
-        // StartCoroutine(DeleteParticipantWithDelay());
+        StartCoroutine(DeleteParticipantWithDelay());
     }
 
     private IEnumerator GetParticipants()
