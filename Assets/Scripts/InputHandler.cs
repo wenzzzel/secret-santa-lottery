@@ -44,7 +44,7 @@ public class InputHandler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _targetPosition = new Vector2(note.transform.position.x, -0.5f);
+        _targetPosition = new Vector2(note.transform.position.x, 350f);
     }
 
     // Update is called once per frame
@@ -94,7 +94,7 @@ public class InputHandler : MonoBehaviour
 
         StartCoroutine(GetParticipants());
 
-        StartCoroutine(DeleteParticipantWithDelay());
+        // StartCoroutine(DeleteParticipantWithDelay());
     }
 
     private IEnumerator GetParticipants()
