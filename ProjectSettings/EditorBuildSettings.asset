@@ -9,6 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/MainScene.unity
+    path: Assets/Scenes/1.EnableSound.unity
+    guid: 91663fdd53914524ab1ef416db652dc8
+  - enabled: 1
+    path: Assets/Scenes/2.WhoAreYou.unity
+    guid: 7e0d71d53b6be0b429723c69ab959677
+  - enabled: 1
+    path: Assets/Scenes/3.MainSceneBackup.unity
     guid: dc693ae1e00af2f4e82e3e98e8634d68
   m_configObjects: {}

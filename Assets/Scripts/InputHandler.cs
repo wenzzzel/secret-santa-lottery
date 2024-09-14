@@ -5,27 +5,13 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Networking;
 using UnityEngine.UI;
-// using System.IO;
-
-[System.Serializable]
-public class WebResponse 
-{
-    public List<Participant> participants;
-}
-
-[System.Serializable]
-public class Participant 
-{
-    public int id;
-    public string name;
-}
 
 public class InputHandler : MonoBehaviour
 {
     private Camera _mainCamera;
     private bool _hatClicked = false;
-    private Vector2 _targetPosition;
-    private WebResponse _webResponse;
+    private Vector2 _noteTargetPositionAfterClicked;
+    private ParticipantApiResponse _webResponse;
     private int _participantId;
     private string _participantName;
     private bool _requestDone = false;
@@ -44,7 +30,7 @@ public class InputHandler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _targetPosition = new Vector2(note.transform.position.x, 350f);
+        _noteTargetPositionAfterClicked = new Vector2(note.transform.position.x, 350f);
     }
 
     // Update is called once per frame
@@ -52,7 +38,7 @@ public class InputHandler : MonoBehaviour
     {
         if (_requestDone)
         {
-            note.transform.position = Vector2.Lerp(note.transform.position, _targetPosition, 3f * Time.deltaTime);
+            note.transform.position = Vector2.Lerp(note.transform.position, _noteTargetPositionAfterClicked, 3f * Time.deltaTime);
 
             if(_noteDelivered) return;
 
@@ -60,9 +46,9 @@ public class InputHandler : MonoBehaviour
 
             do
             {
-                var randomIndex = Random.Range(0, _webResponse.participants.Count);
-                _participantId = _webResponse.participants[randomIndex].id;
-                _participantName = _webResponse.participants[randomIndex].name;
+                var randomIndex = Random.Range(0, _webResponse.Participants.Count);
+                _participantId = int.Parse(_webResponse.Participants[randomIndex].Id);
+                _participantName = _webResponse.Participants[randomIndex].Name;
 
                 Debug.Log($"Get {_participantName}");
             } while (_participantId == whoAreYou.value);
@@ -71,9 +57,9 @@ public class InputHandler : MonoBehaviour
         }
     }
 
-    public void OnClick(InputAction.CallbackContext context)
+    public void OnClick(InputAction.CallbackContext callbackContext)
     {
-        if (!context.started) return;
+        if (!callbackContext.started) return;
 
         RaycastHit2D rayHit;
 
@@ -103,7 +89,7 @@ public class InputHandler : MonoBehaviour
         
         yield return request.SendWebRequest();
 
-        _webResponse = JsonUtility.FromJson<WebResponse>(request.downloadHandler.text);
+        _webResponse = JsonUtility.FromJson<ParticipantApiResponse>(request.downloadHandler.text);
 
         if (request.isDone) _requestDone = true;
     }
