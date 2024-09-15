@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-public class ParticipantApiResponse
+public class ParticipantsApiResponse
 {
     public List<Participant> Participants { get; set; }
 }

@@ -2,7 +2,7 @@ using Zenject;
 using UnityEngine;
 using System.Collections;
 
-public class TestInstaller : MonoInstaller
+public class DependencyInjection : MonoInstaller
 {
     public override void InstallBindings()
     {

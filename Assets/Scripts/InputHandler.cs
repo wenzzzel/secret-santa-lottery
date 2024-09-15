@@ -11,7 +11,7 @@ public class InputHandler : MonoBehaviour
     private Camera _mainCamera;
     private bool _hatClicked = false;
     private Vector2 _noteTargetPositionAfterClicked;
-    private ParticipantApiResponse _webResponse;
+    private ParticipantsApiResponse _webResponse;
     private int _participantId;
     private string _participantName;
     private bool _requestDone = false;
@@ -89,7 +89,7 @@ public class InputHandler : MonoBehaviour
         
         yield return request.SendWebRequest();
 
-        _webResponse = JsonUtility.FromJson<ParticipantApiResponse>(request.downloadHandler.text);
+        _webResponse = JsonUtility.FromJson<ParticipantsApiResponse>(request.downloadHandler.text);
 
         if (request.isDone) _requestDone = true;
     }
