@@ -11,4 +11,5 @@ public class Participant
     public string Name { get; set; }
     public string Partner { get; set; }
     public string SantaForId { get; set; }
+    public bool AlreadyTaken { get; set; }
 }

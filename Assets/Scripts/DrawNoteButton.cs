@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
@@ -56,20 +53,24 @@ public class DrawNoteButton : MonoBehaviour
                 Id = participants[randomIndex].Id,
                 Name = participants[randomIndex].Name,
                 Partner = participants[randomIndex].Partner,
-                SantaForId = participants[randomIndex].SantaForId
+                SantaForId = participants[randomIndex].SantaForId,
+                AlreadyTaken = participants[randomIndex].AlreadyTaken
             };
 
-            Debug.Log($"Got {_participant.Name}");
-        } while (_participant.Id == GlobalVariables.Me.Id || _participant.Id == GlobalVariables.Me.Partner);
+        } while (NotValidParticipant());
 
         note.GetComponent<Note>().SetNoteText(_participant.Name);
         note.GetComponent<Note>().InitiateNoteMovement();
 
         GlobalVariables.Me.SantaForId = _participant.Id;
+        var updateMyselfResponse = _apiHelper.UpdateParticipant(GlobalVariables.Me);
 
-        var response = _apiHelper.UpdateParticipant(GlobalVariables.Me);
-
-        //UPdate record in database
-        //var response = _apiHelper.DeleteParticipantWithDelay(participants.First().Id, participants.First().Name, participants.First().Partner, participants.First().SantaForId);
+        _participant.AlreadyTaken = true;
+        var updateDrawnParticipantResponse = _apiHelper.UpdateParticipant(_participant);
     }
+
+    private bool NotValidParticipant() =>
+        _participant.Id == GlobalVariables.Me.Id || 
+        _participant.Id == GlobalVariables.Me.Partner ||
+        _participant.AlreadyTaken;
 }
