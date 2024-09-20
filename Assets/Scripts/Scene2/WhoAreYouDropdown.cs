@@ -1,8 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
-using UnityEngine.UI;
 using Zenject;
 
 public class WhoAreYouDropdown : MonoBehaviour
@@ -17,7 +13,7 @@ public class WhoAreYouDropdown : MonoBehaviour
         _apiHelper = apiHelper;
     }
 
-    void Start()
+    private void Start()
     {
         _dropdown = GetComponent<TMPro.TMP_Dropdown>();
 
@@ -31,7 +27,7 @@ public class WhoAreYouDropdown : MonoBehaviour
         _dropdown.RefreshShownValue();
     }
 
-    void Update()
+    private void Update()
     {
 
     }

@@ -10,6 +10,6 @@ public class Participant
     public string Id { get; set; }
     public string Name { get; set; }
     public string Partner { get; set; }
-    public string SantaForId { get; set; }
+    public string SantaFor { get; set; }
     public bool AlreadyTaken { get; set; }
 }

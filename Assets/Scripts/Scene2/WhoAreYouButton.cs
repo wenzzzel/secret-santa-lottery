@@ -1,32 +1,31 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
 
 public class WhoAreYouButton : MonoBehaviour
 {
-    public TMPro.TMP_Dropdown _whoAreYouDropdown;
+    [SerializeField]
+    private TMPro.TMP_Dropdown _whoAreYouDropdown;
 
-    IApiHelper _apiHelper;
+    private IApiHelper _apiHelper;
 
     [Inject]
-    public void Init(IApiHelper apiHelper)
+    public void Init(IApiHelper apiHelper) //Can this be private?
     {
         _apiHelper = apiHelper;
     }
 
-    void Start()
+    private void Start()
     {
         gameObject.GetComponent<Button>().onClick.AddListener(() => OnClick());
     }
 
-    void Update()
+    private void Update()
     {
         
     }
 
-    void OnClick()
+    private void OnClick()
     {
         var selectedParticipantName = _whoAreYouDropdown.options[_whoAreYouDropdown.value].text;
 

@@ -4,17 +4,17 @@ using UnityEngine.UI;
 
 public class NextScene : MonoBehaviour
 {
-    void Start()
+    private void Start()
     {
         gameObject.GetComponent<Button>().onClick.AddListener(() => OnClick());
     }
 
-    void Update()
+    private void Update()
     {
         
     }
 
-    void OnClick()
+    private void OnClick()
     {
         var currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex + 1);
