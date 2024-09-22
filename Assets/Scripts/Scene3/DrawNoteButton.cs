@@ -5,14 +5,16 @@ using Zenject;
 
 public class DrawNoteButton : MonoBehaviour
 {
-
     private bool _hatClicked = false;
+    
+    [SerializeField]
+    private GameObject _note;
 
     [SerializeField]
-    private GameObject note;
+    private GameObject _hushingSanta;
 
     [SerializeField]
-    private GameObject hushingSanta;
+    private List<WiggleScript> _wigglesToStopWhenClicked;
 
     private IApiHelper _apiHelper;
 
@@ -29,7 +31,7 @@ public class DrawNoteButton : MonoBehaviour
 
     private void Update()
     {
-        
+
     }
 
     private void OnClick()
@@ -38,12 +40,15 @@ public class DrawNoteButton : MonoBehaviour
         
         _hatClicked = true;
 
+        foreach (var wiggle in _wigglesToStopWhenClicked)
+            wiggle._wiggle = false;
+
 
         if (GlobalVariables.Me.SantaFor != null) //If the current player already has a value in SantaForId, just use that one
         {
-            note.GetComponent<Note>().SetNoteText(GlobalVariables.Me.SantaFor);
-            note.GetComponent<Note>().InitiateNoteMovement();
-            hushingSanta.GetComponent<ShushingSanta>().InitiateSantaMovement();
+            _note.GetComponent<Note>().SetNoteText(GlobalVariables.Me.SantaFor);
+            _note.GetComponent<Note>().InitiateNoteMovement();
+            _hushingSanta.GetComponent<ShushingSanta>().InitiateSantaMovement();
             return;
         }
 
@@ -51,9 +56,9 @@ public class DrawNoteButton : MonoBehaviour
 
         var randomParticipant = PickRandomParticipant(participants);
 
-        note.GetComponent<Note>().SetNoteText(randomParticipant.Name);
-        note.GetComponent<Note>().InitiateNoteMovement();
-        hushingSanta.GetComponent<ShushingSanta>().InitiateSantaMovement();
+        _note.GetComponent<Note>().SetNoteText(randomParticipant.Name);
+        _note.GetComponent<Note>().InitiateNoteMovement();
+        _hushingSanta.GetComponent<ShushingSanta>().InitiateSantaMovement();
 
         GlobalVariables.Me.SantaFor = randomParticipant.Name;
         var updateMyselfResponse = _apiHelper.UpdateParticipant(GlobalVariables.Me);
