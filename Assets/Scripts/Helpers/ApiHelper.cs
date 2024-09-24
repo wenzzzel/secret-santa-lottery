@@ -18,7 +18,7 @@ public class ApiHelper : IApiHelper
 
     public ParticipantsApiResponse GetParticipants()
     {
-        var response = _client.GetAsync("http://localhost:5000/Participants");
+        var response = _client.GetAsync("https://wenzelapiman.azure-api.net/participants");
 
         response.Result.EnsureSuccessStatusCode();
 
@@ -35,7 +35,7 @@ public class ApiHelper : IApiHelper
 
         var body = new StringContent(json, System.Text.Encoding.UTF8, "application/json");
 
-        var response = _client.PutAsync($"http://localhost:5000/Participants", body);
+        var response = _client.PutAsync($"https://wenzelapiman.azure-api.net/participants", body);
 
         return response.Result.StatusCode;
     }
