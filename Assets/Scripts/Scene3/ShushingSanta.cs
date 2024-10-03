@@ -7,7 +7,7 @@ public class ShushingSanta : MonoBehaviour
 
     private void Start()
     {
-        _santaTargetPositionAfterClicked = new Vector3(692f, -376f, transform.position.z);
+        _santaTargetPositionAfterClicked = new Vector3(2.26f, -1.87f, transform.position.z);
     }
 
     private void Update()
