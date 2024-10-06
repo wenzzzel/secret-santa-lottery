@@ -31,5 +31,5 @@ public class Note : MonoBehaviour
 
     public void SetNoteText(string text) => GetComponentInChildren<TMPro.TextMeshPro>().text = text;
 
-    private bool NoteIsCloseToDestination() => transform.position.y >= _noteTargetPositionAfterClicked.y - 0.01f && transform.position.x == _noteTargetPositionAfterClicked.x;
+    private bool NoteIsCloseToDestination() => transform.position.y >= _noteTargetPositionAfterClicked.y - 0.1f && transform.position.x == _noteTargetPositionAfterClicked.x;
 }

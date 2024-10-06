@@ -1,34 +1,31 @@
+using System.Collections;
 using UnityEngine;
-using Zenject;
+using UnityEngine.Networking;
 
 public class WhoAreYouDropdown : MonoBehaviour
 {
     TMPro.TMP_Dropdown _dropdown;
 
-    IApiHelper _apiHelper;
-
-    [Inject]
-    public void Init(IApiHelper apiHelper)
-    {
-        _apiHelper = apiHelper;
-    }
-
     private void Start()
     {
         _dropdown = GetComponent<TMPro.TMP_Dropdown>();
 
-        var participantsWebResponse = _apiHelper.GetParticipants();
-
-        _dropdown.options.Clear();
-
-        foreach (var participant in participantsWebResponse.Participants)
-            _dropdown.options.Add(new(participant.Name));
-
-        _dropdown.RefreshShownValue();
+        StartCoroutine(GetParticipants());
     }
 
-    private void Update()
+    private IEnumerator GetParticipants()
     {
+        using UnityWebRequest request = UnityWebRequest.Get("https://wenzelapiman.azure-api.net/participants");
+        
+        yield return request.SendWebRequest();
 
+        var apiResponse = JsonUtility.FromJson<ParticipantsApiResponse>(request.downloadHandler.text);
+
+        _dropdown.options.Clear();    
+
+        foreach (var participant in apiResponse.participants)
+            _dropdown.options.Add(new(participant.name));
+
+        _dropdown.RefreshShownValue();
     }
 }

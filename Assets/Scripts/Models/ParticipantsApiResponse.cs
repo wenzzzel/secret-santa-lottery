@@ -1,15 +1,17 @@
 using System.Collections.Generic;
 
+[System.Serializable]
 public class ParticipantsApiResponse
 {
-    public List<Participant> Participants { get; set; }
+    public List<Participant> participants;
 }
 
+[System.Serializable]
 public class Participant 
 {
-    public string Id { get; set; }
-    public string Name { get; set; }
-    public string Partner { get; set; }
-    public string SantaFor { get; set; }
-    public bool AlreadyTaken { get; set; }
+    public string id;
+    public string name;
+    public string partner;
+    public string santaFor;
+    public bool alreadyTaken;
 }
