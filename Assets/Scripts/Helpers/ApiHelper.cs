@@ -1,42 +1,22 @@
-using System.Net;
-using System.Net.Http;
-using System.Text.Json;
+using System.Collections;
+using UnityEngine;
+using UnityEngine.Networking;
 
-public interface IApiHelper
+public class ApiHelper 
 {
-    ParticipantsApiResponse GetParticipants();
-    HttpStatusCode UpdateParticipant(Participant participant);
-}
+    private ParticipantsApiResponse _participantsApiResponse;
+    private bool _requestDone = false;
 
-public class ApiHelper : IApiHelper
-{
-    private HttpClient _client = new HttpClient();
-    private JsonSerializerOptions _jsonSerializerOptions = new JsonSerializerOptions
+    public void UpdateParticipant(Participant participant)
     {
-        PropertyNameCaseInsensitive = true
-    };
+        var json = JsonUtility.ToJson(participant);
 
-    public ParticipantsApiResponse GetParticipants()
-    {
-        var response = _client.GetAsync("http://localhost:5000/Participants");
-
-        response.Result.EnsureSuccessStatusCode();
-
-        var content = response.Result.Content.ReadAsStringAsync();
+        var body = new System.Text.UTF8Encoding().GetBytes(json);
         
-        var webResponse = JsonSerializer.Deserialize<ParticipantsApiResponse>(content.Result, _jsonSerializerOptions);
+        using UnityWebRequest request = UnityWebRequest.Put($"https://wenzelapiman.azure-api.net/participants", body);
         
-        return webResponse;
-    }
+       request.SendWebRequest();
 
-    public HttpStatusCode UpdateParticipant(Participant participant)
-    {
-        var json = JsonSerializer.Serialize(participant);
-
-        var body = new StringContent(json, System.Text.Encoding.UTF8, "application/json");
-
-        var response = _client.PutAsync($"http://localhost:5000/Participants", body);
-
-        return response.Result.StatusCode;
+       return;
     }
 }

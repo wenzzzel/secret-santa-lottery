@@ -1,38 +1,31 @@
+using System.Collections;
 using UnityEngine;
+using UnityEngine.Networking;
 using UnityEngine.UI;
-using Zenject;
 
 public class WhoAreYouButton : MonoBehaviour
 {
     [SerializeField]
     private TMPro.TMP_Dropdown _whoAreYouDropdown;
 
-    private IApiHelper _apiHelper;
-
-    [Inject]
-    public void Init(IApiHelper apiHelper) //Can this be private?
-    {
-        _apiHelper = apiHelper;
-    }
-
     private void Start()
     {
         gameObject.GetComponent<Button>().onClick.AddListener(() => OnClick());
     }
 
-    private void Update()
-    {
-        
-    }
-
     private void OnClick()
     {
-        var selectedParticipantName = _whoAreYouDropdown.options[_whoAreYouDropdown.value].text;
+        StartCoroutine(GetParticipants());
+    }
 
-        var allParticipants = _apiHelper.GetParticipants();
+    private IEnumerator GetParticipants()
+    {
+        using UnityWebRequest request = UnityWebRequest.Get("https://wenzelapiman.azure-api.net/participants");
+        
+        yield return request.SendWebRequest();
 
-        var selectedParticipant = allParticipants.Participants.Find(p => p.Name == selectedParticipantName);
+        var apiResponse = JsonUtility.FromJson<ParticipantsApiResponse>(request.downloadHandler.text);
 
-        GlobalVariables.Me = selectedParticipant;
+        GlobalVariables.Me = apiResponse.participants.Find(p => p.name == _whoAreYouDropdown.options[_whoAreYouDropdown.value].text);
     }
 }

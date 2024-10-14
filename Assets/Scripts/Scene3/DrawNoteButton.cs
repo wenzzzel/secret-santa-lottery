@@ -1,7 +1,8 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 using UnityEngine.UI;
-using Zenject;
 
 public class DrawNoteButton : MonoBehaviour
 {
@@ -15,14 +16,10 @@ public class DrawNoteButton : MonoBehaviour
 
     [SerializeField]
     private List<WiggleScript> _wigglesToStopWhenClicked;
-
-    private IApiHelper _apiHelper;
-
-    [Inject]
-    public void Init(IApiHelper apiHelper) //Can this be private?
-    {
-        _apiHelper = apiHelper;
-    }
+    
+    private bool _noteDrawn = false;
+    private bool _dbUpdated = false;
+    private Participant _randomParticipant;
 
     private void Start()
     {
@@ -31,7 +28,16 @@ public class DrawNoteButton : MonoBehaviour
 
     private void Update()
     {
+        if (_noteDrawn && !_dbUpdated)
+        {
+            GlobalVariables.Me.santaFor = _randomParticipant.name;
+            StartCoroutine(UpdateParticipant(GlobalVariables.Me));
 
+            _randomParticipant.alreadyTaken = true;
+            StartCoroutine(UpdateParticipant(_randomParticipant));
+
+            _dbUpdated = true;
+        }
     }
 
     private void OnClick()
@@ -44,27 +50,48 @@ public class DrawNoteButton : MonoBehaviour
             wiggle._wiggle = false;
 
 
-        if (GlobalVariables.Me.SantaFor != null) //If the current player already has a value in SantaForId, just use that one
+        if (!string.IsNullOrEmpty(GlobalVariables.Me.santaFor)) //If the current player already has a value in SantaForId, just use that one
         {
-            _note.GetComponent<Note>().SetNoteText(GlobalVariables.Me.SantaFor);
+            _note.GetComponent<Note>().SetNoteText(GlobalVariables.Me.santaFor);
             _note.GetComponent<Note>().InitiateNoteMovement();
             _hushingSanta.GetComponent<ShushingSanta>().InitiateSantaMovement();
             return;
         }
 
-        var participants = _apiHelper.GetParticipants().Participants; // Try to get await stuff working
-
-        var randomParticipant = PickRandomParticipant(participants);
-
-        _note.GetComponent<Note>().SetNoteText(randomParticipant.Name);
-        _note.GetComponent<Note>().InitiateNoteMovement();
+        StartCoroutine(GetParticipantsAndInitiateNoteMovement());
+        
         _hushingSanta.GetComponent<ShushingSanta>().InitiateSantaMovement();
+    }
 
-        GlobalVariables.Me.SantaFor = randomParticipant.Name;
-        var updateMyselfResponse = _apiHelper.UpdateParticipant(GlobalVariables.Me);
+    private IEnumerator GetParticipantsAndInitiateNoteMovement()
+    {
+        using UnityWebRequest request = UnityWebRequest.Get("https://wenzelapiman.azure-api.net/participants");
+        
+        yield return request.SendWebRequest();
 
-        randomParticipant.AlreadyTaken = true;
-        var updateDrawnParticipantResponse = _apiHelper.UpdateParticipant(randomParticipant);
+        var apiResponse = JsonUtility.FromJson<ParticipantsApiResponse>(request.downloadHandler.text);
+
+        var participants = apiResponse.participants;
+
+        _randomParticipant = PickRandomParticipant(participants);
+
+        _note.GetComponent<Note>().SetNoteText(_randomParticipant.name);
+        _note.GetComponent<Note>().InitiateNoteMovement();
+
+        if (request.isDone) _noteDrawn = true;
+    }
+
+    private IEnumerator UpdateParticipant(Participant participant)
+    {
+        var json = JsonUtility.ToJson(participant);
+
+        var body = new System.Text.UTF8Encoding().GetBytes(json);
+        
+        using UnityWebRequest request = UnityWebRequest.Put($"https://wenzelapiman.azure-api.net/participants", body);
+        
+        request.SetRequestHeader("Content-Type", "application/json");
+
+        yield return request.SendWebRequest();
     }
 
     private Participant PickRandomParticipant(List<Participant> participants)
@@ -77,11 +104,11 @@ public class DrawNoteButton : MonoBehaviour
 
             randomParticipant = new Participant
             {
-                Id = participants[randomIndex].Id,
-                Name = participants[randomIndex].Name,
-                Partner = participants[randomIndex].Partner,
-                SantaFor = participants[randomIndex].SantaFor,
-                AlreadyTaken = participants[randomIndex].AlreadyTaken
+                id = participants[randomIndex].id,
+                name = participants[randomIndex].name,
+                partner = participants[randomIndex].partner,
+                santaFor = participants[randomIndex].santaFor,
+                alreadyTaken = participants[randomIndex].alreadyTaken
             };
 
         } while (InvalidParticipant(randomParticipant));
@@ -90,7 +117,9 @@ public class DrawNoteButton : MonoBehaviour
     }
 
     private bool InvalidParticipant(Participant participant) =>
-        participant.Id == GlobalVariables.Me.Id || 
-        participant.Id == GlobalVariables.Me.Partner ||
-        participant.AlreadyTaken;
+        participant.id == GlobalVariables.Me.id || 
+        participant.id == GlobalVariables.Me.partner ||
+        participant.alreadyTaken;
+
+
 }

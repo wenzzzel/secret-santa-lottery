@@ -9,7 +9,7 @@ public class Note : MonoBehaviour
 
     private void Start()
     {
-        _noteTargetPositionAfterClicked = new Vector3(transform.position.x, 350f, transform.position.z);
+        _noteTargetPositionAfterClicked = new Vector3(transform.position.x, 1f, transform.position.z);
         _particleSystem = GetComponentInChildren<ParticleSystem>();
     }
 
@@ -31,5 +31,5 @@ public class Note : MonoBehaviour
 
     public void SetNoteText(string text) => GetComponentInChildren<TMPro.TextMeshPro>().text = text;
 
-    private bool NoteIsCloseToDestination() => transform.position.y >= _noteTargetPositionAfterClicked.y - 35f && transform.position.x == _noteTargetPositionAfterClicked.x;
+    private bool NoteIsCloseToDestination() => transform.position.y >= _noteTargetPositionAfterClicked.y - 0.1f && transform.position.x == _noteTargetPositionAfterClicked.x;
 }
