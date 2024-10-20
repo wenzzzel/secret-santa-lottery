@@ -183,7 +183,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: HAT IS EMPTY
+  m_text: HAT IS EMPYU
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ef8cdbdf77a00cf4d843a6228df78ecd, type: 2}
   m_sharedMaterial: {fileID: 4746343045695471568, guid: ef8cdbdf77a00cf4d843a6228df78ecd, type: 2}
@@ -210,8 +210,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 10
-  m_fontSizeBase: 10
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -246,7 +246,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 11.814778, y: -1.5880651, z: -2.2311382, w: 2.2500236}
+  m_margin: {x: 11.321822, y: -2.0051818, z: -2.8378544, w: 1.4537106}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
